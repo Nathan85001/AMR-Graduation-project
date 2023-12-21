@@ -1,0 +1,49 @@
+[0.125s] Invoking command in '/home/nathan/amr_path_planning_ws/build/amr_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/amr_path_planning_ws/install/my_amr:/home/nathan/path_planning_ws/install/maze_bot:/opt/ros/humble /usr/bin/cmake --build /home/nathan/amr_path_planning_ws/build/amr_description -- -j12 -l12
+[0.163s] Invoked command in '/home/nathan/amr_path_planning_ws/build/amr_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/amr_path_planning_ws/install/my_amr:/home/nathan/path_planning_ws/install/maze_bot:/opt/ros/humble /usr/bin/cmake --build /home/nathan/amr_path_planning_ws/build/amr_description -- -j12 -l12
+[0.190s] Invoking command in '/home/nathan/amr_path_planning_ws/build/amr_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/amr_path_planning_ws/install/my_amr:/home/nathan/path_planning_ws/install/maze_bot:/opt/ros/humble /usr/bin/cmake --install /home/nathan/amr_path_planning_ws/build/amr_description
+[0.197s] -- Install configuration: ""
+[0.197s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/launch
+[0.197s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/launch/gazebo.launch.py
+[0.197s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/launch/display.launch.py
+[0.197s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes
+[0.198s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/top_final.dae
+[0.198s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/assem copy.stl
+[0.198s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/inner_final.dae
+[0.198s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/base_final.stl
+[0.198s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/kinect.dae
+[0.198s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/inner_final.stl
+[0.198s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/top_final.stl
+[0.199s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/lidar.dae
+[0.199s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/shaft_final.stl
+[0.199s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/top_plate_final.stl
+[0.199s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/lidar.stl
+[0.199s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/shaft_final.dae
+[0.199s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/assem.stl
+[0.199s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/Base_final.dae
+[0.200s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/Base_final.stl
+[0.200s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/outer_final.stl
+[0.200s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/kinect.stl
+[0.201s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/top_plate_final.dae
+[0.201s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/outer_final.dae
+[0.201s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/urdf
+[0.201s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/urdf/amr_gazebo.xacro
+[0.202s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/urdf/amr_ros2_control.xacro
+[0.202s] -- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/urdf/amr.urdf.xacro
+[0.202s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/rviz
+[0.202s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/rviz/display.rviz
+[0.202s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/ament_index/resource_index/package_run_dependencies/amr_description
+[0.203s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/ament_index/resource_index/parent_prefix_path/amr_description
+[0.203s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/environment/ament_prefix_path.sh
+[0.203s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/environment/ament_prefix_path.dsv
+[0.203s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/environment/path.sh
+[0.204s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/environment/path.dsv
+[0.204s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/local_setup.bash
+[0.204s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/local_setup.sh
+[0.204s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/local_setup.zsh
+[0.205s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/local_setup.dsv
+[0.205s] -- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/package.dsv
+[0.205s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/ament_index/resource_index/packages/amr_description
+[0.205s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/cmake/amr_descriptionConfig.cmake
+[0.206s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/cmake/amr_descriptionConfig-version.cmake
+[0.206s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/package.xml
+[0.206s] Invoked command in '/home/nathan/amr_path_planning_ws/build/amr_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/amr_path_planning_ws/install/my_amr:/home/nathan/path_planning_ws/install/maze_bot:/opt/ros/humble /usr/bin/cmake --install /home/nathan/amr_path_planning_ws/build/amr_description

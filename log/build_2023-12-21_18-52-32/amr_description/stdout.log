@@ -1,0 +1,51 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+-- Found urdf: 2.6.0 (/opt/ros/humble/share/urdf/cmake)
+-- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/nathan/amr_path_planning_ws/build/amr_description
+-- Install configuration: ""
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/launch
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/launch/gazebo.launch.py
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/launch/display.launch.py
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/top_final.dae
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/assem copy.stl
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/inner_final.dae
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/base_final.stl
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/kinect.dae
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/inner_final.stl
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/top_final.stl
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/lidar.dae
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/shaft_final.stl
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/top_plate_final.stl
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/lidar.stl
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/shaft_final.dae
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/assem.stl
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/Base_final.dae
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/Base_final.stl
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/outer_final.stl
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/kinect.stl
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/top_plate_final.dae
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/outer_final.dae
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/urdf
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/urdf/amr_gazebo.xacro
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/urdf/amr_ros2_control.xacro
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/urdf/amr.urdf.xacro

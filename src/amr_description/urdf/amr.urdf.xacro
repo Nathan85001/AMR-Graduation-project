@@ -10,7 +10,7 @@
 
     <link name="base_footprint"/>
     
-    <link name="base_link">
+    <link name="base">
         <inertial>
         <origin xyz="0 0 0.1" rpy="0 0 0" />
         <mass value="8.34"/>
@@ -31,12 +31,11 @@
         </collision>
     </link>
 
-</link>
-<joint name="base_joint" type="fixed">
-<parent link="base_footprint"/>
-<child link="base"/>
-<origin rpy="0 0 0" xyz="0 0 0.093"/>
-</joint>
+    <joint name="base_joint" type="fixed">
+    <parent link="base_footprint"/>
+    <child link="base"/>
+    <origin rpy="0 0 0" xyz="0 0 0.093"/>
+    </joint>
 
     <!-- 
     links for right front wheels

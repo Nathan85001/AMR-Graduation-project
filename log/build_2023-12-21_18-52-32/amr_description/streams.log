@@ -1,0 +1,63 @@
+[0.094s] Invoking command in '/home/nathan/amr_path_planning_ws/build/amr_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/path_planning_ws/install/maze_bot:/opt/ros/humble /usr/bin/cmake /home/nathan/amr_path_planning_ws/src/amr_description -DCMAKE_INSTALL_PREFIX=/home/nathan/amr_path_planning_ws/install/amr_description
+[0.193s] -- The C compiler identification is GNU 11.4.0
+[0.275s] -- The CXX compiler identification is GNU 11.4.0
+[0.285s] -- Detecting C compiler ABI info
+[0.346s] -- Detecting C compiler ABI info - done
+[0.353s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.354s] -- Detecting C compile features
+[0.355s] -- Detecting C compile features - done
+[0.359s] -- Detecting CXX compiler ABI info
+[0.427s] -- Detecting CXX compiler ABI info - done
+[0.435s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.436s] -- Detecting CXX compile features
+[0.436s] -- Detecting CXX compile features - done
+[0.443s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.619s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[0.730s] -- Found urdf: 2.6.0 (/opt/ros/humble/share/urdf/cmake)
+[0.801s] -- Found ament_lint_auto: 0.12.9 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.890s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.891s] -- Added test 'lint_cmake' to check CMake code style
+[0.892s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.894s] -- Added test 'xmllint' to check XML markup files
+[0.896s] -- Configuring done
+[0.898s] -- Generating done
+[0.899s] -- Build files have been written to: /home/nathan/amr_path_planning_ws/build/amr_description
+[0.904s] Invoked command in '/home/nathan/amr_path_planning_ws/build/amr_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/path_planning_ws/install/maze_bot:/opt/ros/humble /usr/bin/cmake /home/nathan/amr_path_planning_ws/src/amr_description -DCMAKE_INSTALL_PREFIX=/home/nathan/amr_path_planning_ws/install/amr_description
+[0.906s] Invoking command in '/home/nathan/amr_path_planning_ws/build/amr_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/path_planning_ws/install/maze_bot:/opt/ros/humble /usr/bin/cmake --build /home/nathan/amr_path_planning_ws/build/amr_description -- -j12 -l12
+[0.938s] Invoked command in '/home/nathan/amr_path_planning_ws/build/amr_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/path_planning_ws/install/maze_bot:/opt/ros/humble /usr/bin/cmake --build /home/nathan/amr_path_planning_ws/build/amr_description -- -j12 -l12
+[0.962s] Invoking command in '/home/nathan/amr_path_planning_ws/build/amr_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/path_planning_ws/install/maze_bot:/opt/ros/humble /usr/bin/cmake --install /home/nathan/amr_path_planning_ws/build/amr_description
+[0.968s] -- Install configuration: ""
+[0.968s] -- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/launch
+[0.968s] -- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/launch/gazebo.launch.py
+[0.969s] -- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/launch/display.launch.py
+[0.969s] -- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes
+[0.969s] -- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/top_final.dae
+[0.969s] -- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/assem copy.stl
+[0.972s] -- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/inner_final.dae
+[0.972s] -- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/base_final.stl
+[0.972s] -- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/kinect.dae
+[0.972s] -- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/inner_final.stl
+[0.973s] -- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/top_final.stl
+[0.973s] -- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/lidar.dae
+[0.973s] -- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/shaft_final.stl
+[0.973s] -- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/top_plate_final.stl
+[0.973s] -- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/lidar.stl
+[0.974s] -- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/shaft_final.dae
+[0.974s] -- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/assem.stl
+[0.976s] -- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/Base_final.dae
+[0.976s] -- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/Base_final.stl
+[0.977s] -- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/outer_final.stl
+[0.977s] -- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/kinect.stl
+[0.977s] -- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/top_plate_final.dae
+[0.977s] -- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/outer_final.dae
+[0.978s] -- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/urdf
+[0.978s] -- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/urdf/amr_gazebo.xacro
+[0.978s] -- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/urdf/amr_ros2_control.xacro
+[0.978s] -- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/urdf/amr.urdf.xacro
+[0.978s] [31mCMake Error at cmake_install.cmake:46 (file):
+[0.978s]   file INSTALL cannot find
+[0.978s]   "/home/nathan/amr_path_planning_ws/src/amr_description/rviz": No such file
+[0.978s]   or directory.
+[0.978s] 
+[0.979s] [0m
+[0.979s] Invoked command in '/home/nathan/amr_path_planning_ws/build/amr_description' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/path_planning_ws/install/maze_bot:/opt/ros/humble /usr/bin/cmake --install /home/nathan/amr_path_planning_ws/build/amr_description
