@@ -1,37 +1,42 @@
-    <robot name="my_amr">
+<?xml version="1.0"?>
 
+<robot name="amr" xmlns:xacro="http://ros.org/wiki/xacro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://wiki.ros.org/urdf/XML">
 
-        <link name="base_footprint"/>
-        <link name="base">
-        <inertial>
-            <mass value="8.34" />
-            <origin xyz="0 0 0.1" rpy="0 0 0" />
-            <inertia ixx="0.002386469" iyy="0.004827723" izz="0.003252219" ixy="0.0" ixz="0.0" iyz="0.0" />
-        </inertial>
+    <!-- Include Gazebo Parameters -->
+    <xacro:include filename="$(find amr_description)/urdf/amr_gazebo.xacro" />
 
-        <visual>
-            <geometry>
-                <mesh filename="package://my_amr/meshes/Base_final.stl"/>
-            </geometry>
-            <material name="gray">
-            <color rgba=".7 .7 .7 1" />
-            </material>
-        </visual>
+    <!-- Include ros2_control Plugins -->
+    <xacro:include filename="$(find amr_description)/urdf/amr_ros2_control.xacro" />
+
+    <link name="base_footprint"/>
     
-        <collision>
-            <geometry>
-                <mesh filename="package://my_amr/meshes/Base_final.stl"/>
+    <link name="base_link">
+        <inertial>
+        <origin xyz="0 0 0.1" rpy="0 0 0" />
+        <mass value="8.34"/>
+        <inertia ixx="0.002386469" iyy="0.004827723" izz="0.003252219" ixy="0.0" ixz="0.0" iyz="0.0" />        </inertial>
+        <visual>
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <geometry>
+            <mesh filename="package://amr_description/meshes/Base_final.stl"/>
         </geometry>
-        <contact_coefficients mu="1" mu2="1" kp="1e+13.0" kd="1.0"/>
+        <material name="gray">
+            <color rgba=".7 .7 .7 1" />
+        </material>
+        </visual>
+        <collision>
+        <geometry>
+            <mesh filename="package://amr_description/meshes/Base_final.stl"/>
+        </geometry>
         </collision>
+    </link>
 
-
-        </link>
-        <joint name="base_joint" type="fixed">
-        <parent link="base_footprint"/>
-        <child link="base"/>
-        <origin rpy="0 0 0" xyz="0 0 0.093"/>
-        </joint>
+</link>
+<joint name="base_joint" type="fixed">
+<parent link="base_footprint"/>
+<child link="base"/>
+<origin rpy="0 0 0" xyz="0 0 0.093"/>
+</joint>
 
     <!-- 
     links for right front wheels
@@ -47,7 +52,7 @@
         <visual>
             
             <geometry>
-                <mesh filename="package://my_amr/meshes/shaft_final.stl"/>
+                <mesh filename="package://amr_description/meshes/shaft_final.stl"/>
             </geometry>
 
             <material name="white">
@@ -57,7 +62,7 @@
     
         <collision>
             <geometry>
-                <mesh filename="package://my_amr/meshes/shaft_final.stl"/>
+                <mesh filename="package://amr_description/meshes/shaft_final.stl"/>
             </geometry>
             <contact_coefficients mu="0" kp="1000.0" kd="1.0"/>
         </collision>
@@ -74,7 +79,7 @@
         <visual>
             
             <geometry>
-                <mesh filename="package://my_amr/meshes/inner_final.stl"/>
+                <mesh filename="package://amr_description/meshes/inner_final.stl"/>
             </geometry>
 
             <material name="silver">
@@ -84,7 +89,7 @@
     
         <collision>
             <geometry>
-                <mesh filename="package://my_amr/meshes/inner_final.stl"/>
+                <mesh filename="package://amr_description/meshes/inner_final.stl"/>
             </geometry>
             <contact_coefficients mu="0" kp="0.0" kd="0.0"/>
         </collision>
@@ -101,7 +106,7 @@
         <visual>
             
             <geometry>
-                <mesh filename="package://my_amr/meshes/outer_final.stl"/>
+                <mesh filename="package://amr_description/meshes/outer_final.stl"/>
             </geometry>
 
             <material name="white">
@@ -111,7 +116,7 @@
     
         <collision>
             <geometry>
-                <mesh filename="package://my_amr/meshes/outer_final.stl"/>
+                <mesh filename="package://amr_description/meshes/outer_final.stl"/>
             </geometry>
             <contact_coefficients mu="0" kp="0.0" kd="0.0"/>
         </collision>
@@ -132,7 +137,7 @@
         <visual>
             
             <geometry>
-                <mesh filename="package://my_amr/meshes/shaft_final.stl"/>
+                <mesh filename="package://amr_description/meshes/shaft_final.stl"/>
             </geometry>
 
             <material name="white">
@@ -142,7 +147,7 @@
     
         <collision>
             <geometry>
-                <mesh filename="package://my_amr/meshes/shaft_final.stl"/>
+                <mesh filename="package://amr_description/meshes/shaft_final.stl"/>
             </geometry>
             <contact_coefficients mu="0" kp="1000.0" kd="1.0"/>
         </collision>
@@ -159,7 +164,7 @@
         <visual>
             
             <geometry>
-                <mesh filename="package://my_amr/meshes/inner_final.stl"/>
+                <mesh filename="package://amr_description/meshes/inner_final.stl"/>
             </geometry>
 
             <material name="silver">
@@ -169,7 +174,7 @@
     
         <collision>
             <geometry>
-                <mesh filename="package://my_amr/meshes/inner_final.stl"/>
+                <mesh filename="package://amr_description/meshes/inner_final.stl"/>
             </geometry>
             <contact_coefficients mu="0" kp="0.0" kd="0.0"/>
         </collision>
@@ -186,7 +191,7 @@
         <visual>
             
             <geometry>
-                <mesh filename="package://my_amr/meshes/outer_final.stl"/>
+                <mesh filename="package://amr_description/meshes/outer_final.stl"/>
             </geometry>
 
             <material name="white">
@@ -196,7 +201,7 @@
     
         <collision>
             <geometry>
-                <mesh filename="package://my_amr/meshes/outer_final.stl"/>
+                <mesh filename="package://amr_description/meshes/outer_final.stl"/>
             </geometry>
             <contact_coefficients mu="0" kp="0.0" kd="0.0"/>
         </collision>
@@ -217,7 +222,7 @@
         <visual>
             
             <geometry>
-                <mesh filename="package://my_amr/meshes/shaft_final.stl"/>
+                <mesh filename="package://amr_description/meshes/shaft_final.stl"/>
             </geometry>
 
             <material name="white">
@@ -227,7 +232,7 @@
     
         <collision>
             <geometry>
-                <mesh filename="package://my_amr/meshes/shaft_final.stl"/>
+                <mesh filename="package://amr_description/meshes/shaft_final.stl"/>
             </geometry>
             <contact_coefficients mu="0" kp="1000.0" kd="1.0"/>
         </collision>
@@ -244,7 +249,7 @@
         <visual>
             
             <geometry>
-                <mesh filename="package://my_amr/meshes/inner_final.stl"/>
+                <mesh filename="package://amr_description/meshes/inner_final.stl"/>
             </geometry>
 
             <material name="silver">
@@ -254,7 +259,7 @@
     
         <collision>
             <geometry>
-                <mesh filename="package://my_amr/meshes/inner_final.stl"/>
+                <mesh filename="package://amr_description/meshes/inner_final.stl"/>
             </geometry>
             <contact_coefficients mu="0" kp="0.0" kd="0.0"/>
         </collision>
@@ -271,7 +276,7 @@
         <visual>
             
             <geometry>
-                <mesh filename="package://my_amr/meshes/outer_final.stl"/>
+                <mesh filename="package://amr_description/meshes/outer_final.stl"/>
             </geometry>
 
             <material name="white">
@@ -281,7 +286,7 @@
     
         <collision>
             <geometry>
-                <mesh filename="package://my_amr/meshes/outer_final.stl"/>
+                <mesh filename="package://amr_description/meshes/outer_final.stl"/>
             </geometry>
             <contact_coefficients mu="0" kp="0.0" kd="0.0"/>
         </collision>
@@ -302,7 +307,7 @@
         <visual>
             
             <geometry>
-                <mesh filename="package://my_amr/meshes/shaft_final.stl"/>
+                <mesh filename="package://amr_description/meshes/shaft_final.stl"/>
             </geometry>
 
             <material name="white">
@@ -312,7 +317,7 @@
     
         <collision>
             <geometry>
-                <mesh filename="package://my_amr/meshes/shaft_final.stl"/>
+                <mesh filename="package://amr_description/meshes/shaft_final.stl"/>
             </geometry>
             <contact_coefficients mu="0" kp="1000.0" kd="1.0"/>
         </collision>
@@ -329,7 +334,7 @@
         <visual>
             
             <geometry>
-                <mesh filename="package://my_amr/meshes/inner_final.stl"/>
+                <mesh filename="package://amr_description/meshes/inner_final.stl"/>
             </geometry>
 
             <material name="silver">
@@ -339,7 +344,7 @@
     
         <collision>
             <geometry>
-                <mesh filename="package://my_amr/meshes/inner_final.stl"/>
+                <mesh filename="package://amr_description/meshes/inner_final.stl"/>
             </geometry>
             <contact_coefficients mu="0" kp="0.0" kd="0.0"/>
         </collision>
@@ -356,7 +361,7 @@
         <visual>
             
             <geometry>
-                <mesh filename="package://my_amr/meshes/outer_final.stl"/>
+                <mesh filename="package://amr_description/meshes/outer_final.stl"/>
             </geometry>
 
             <material name="white">
@@ -366,7 +371,7 @@
     
         <collision>
             <geometry>
-                <mesh filename="package://my_amr/meshes/outer_final.stl"/>
+                <mesh filename="package://amr_description/meshes/outer_final.stl"/>
             </geometry>
             <contact_coefficients mu="0" kp="0.0" kd="0.0"/>
         </collision>
@@ -387,7 +392,7 @@
         <visual>
             
             <geometry>
-                <mesh filename="package://my_amr/meshes/top_final.stl"/>
+                <mesh filename="package://amr_description/meshes/top_final.stl"/>
             </geometry>
 
             <material name="gray">
@@ -397,7 +402,7 @@
     
         <collision>
             <geometry>
-                <mesh filename="package://my_amr/meshes/top_final.stl"/>
+                <mesh filename="package://amr_description/meshes/top_final.stl"/>
             </geometry>
             <contact_coefficients mu="0" kp="0.0" kd="0.0"/>
         </collision>
@@ -418,7 +423,7 @@
         <visual>
             
             <geometry>
-                <mesh filename="package://my_amr/meshes/top_plate_final.stl"/>
+                <mesh filename="package://amr_description/meshes/top_plate_final.stl"/>
             </geometry>
 
             <material name="gray">
@@ -428,7 +433,7 @@
     
         <collision>
             <geometry>
-                <mesh filename="package://my_amr/meshes/top_final.stl"/>
+                <mesh filename="package://amr_description/meshes/top_final.stl"/>
             </geometry>
             <contact_coefficients mu="0" kp="0.0" kd="0.0"/>
         </collision>
@@ -449,7 +454,7 @@
         <visual>
             
             <geometry>
-                <mesh filename="package://my_amr/meshes/kinect.stl"/>
+                <mesh filename="package://amr_description/meshes/kinect.stl"/>
             </geometry>
 
             <material name="black">
@@ -459,7 +464,7 @@
     
         <collision>
             <geometry>
-                <mesh filename="package://my_amr/meshes/kinect.stl"/>
+                <mesh filename="package://amr_description/meshes/kinect.stl"/>
             </geometry>
             <contact_coefficients mu="0" kp="0.0" kd="0.0"/>
         </collision>
@@ -480,7 +485,7 @@
         <visual>
             
             <geometry>
-                <mesh filename="package://my_amr/meshes/lidar.stl"/>
+                <mesh filename="package://amr_description/meshes/lidar.stl"/>
             </geometry>
 
             <material name="black">
@@ -490,7 +495,7 @@
     
         <collision>
             <geometry>
-                <mesh filename="package://my_amr/meshes/lidar.stl"/>
+                <mesh filename="package://amr_description/meshes/lidar.stl"/>
             </geometry>
             <contact_coefficients mu="0" kp="0.0" kd="0.0"/>
         </collision>
@@ -501,7 +506,7 @@
     <!-- 
     joints for right back wheels
     -->
-        <joint name="rotor_right_back_joint" type="continuous">
+        <joint name="wheel_rear_right_joint" type="continuous">
         <origin xyz="-0.108 0.19 -0.028  " rpy="0 0.0 0.0"/>
         <parent link="base"/>
         <child link="shaft_right_back"/>
@@ -524,7 +529,7 @@
     <!-- 
     joints for left back wheels
     -->
-        <joint name="rotor_left_back_joint" type="continuous">
+        <joint name="wheel_rear_left_joint" type="continuous">
         <origin xyz="-0.108 -0.19 -0.028  " rpy="3.14 0.0 0.0"/>
         <parent link="base"/>
         <child link="shaft_left_back"/>
@@ -547,7 +552,7 @@
     <!-- 
     joints for left back wheels
     -->
-        <joint name="rotor_left_front_joint" type="continuous">
+        <joint name="wheel_front_left_joint" type="continuous">
         <origin xyz="0.106 -0.19 -0.028  " rpy="3.14 0.0 0.0"/>
         <parent link="base"/>
         <child link="shaft_left_front"/>
@@ -571,7 +576,7 @@
     <!-- 
     joints for right back wheels
     -->
-        <joint name="rotor_right_front_joint" type="continuous">
+        <joint name="wheel_front_right_joint" type="continuous">
         <origin xyz="0.106 0.19 -0.028  " rpy="0.0 0.0 0.0"/>
         <parent link="base"/>
         <child link="shaft_right_front"/>
@@ -634,121 +639,4 @@
         </joint>\
 
 
-        <!-- <gazebo>
-        <plugin filename="libgazebo_ros_4wd_diff_drive.so" name="gazebo_4wd_controller">
-            <odometry_frame>odom</odometry_frame>
-            <commandTopic>cmd_vel_4wd</commandTopic>
-            <publish_odom>true</publish_odom>
-            <publish_odom_tf>true</publish_odom_tf>
-            <update_rate>15.0</update_rate>
-            <left_front_joint>rotor_left_front_joint</left_front_joint>
-            <right_front_joint>rotor_right_front_joint</right_front_joint>
-            <left_rear_joint>rotor_left_back_joint</left_rear_joint>
-            <right_rear_joint>rotor_right_back_joint</right_rear_joint> -->
-        <!-- 40cm -->
-            <!-- <wheel_separation>0.4</wheel_separation> -->
-        <!-- 13cm -->
-            <!-- <left_front_wheel_diameter>0.13</left_front_wheel_diameter>
-            <right_front_wheel_diameter>0.13</right_front_wheel_diameter>
-            <left_rear_wheel_diameter>0.13</left_rear_wheel_diameter>
-            <right_rear_wheel_diameter>0.13</right_rear_wheel_diameter>
-            <robotBaseFrame>base</robotBaseFrame> -->
-        <!-- 0.25m/s^2 -->
-            <!-- <max_wheel_acceleration>0.25</max_wheel_acceleration>
-        </plugin>
-        </gazebo>
-    -->
-
-        
-
-
-        <gazebo>
-            <plugin filename="libgazebo_ros_diff_drive.so" name="gazebo_base_controller">
-            <odometry_frame>odom</odometry_frame>
-            <commandTopic>cmd_vel</commandTopic>
-            <publish_odom>true</publish_odom>
-            <publish_odom_tf>true</publish_odom_tf>
-            <update_rate>15.0</update_rate>
-            <left_joint>rotor_left_back_joint</left_joint>
-            <right_joint>rotor_right_back_joint</right_joint>
-            <wheel_separation>0.4</wheel_separation>
-            <wheel_diameter>0.13</wheel_diameter>
-            <max_wheel_acceleration>0.25</max_wheel_acceleration>
-            <robotBaseFrame>base</robotBaseFrame>
-        
-            </plugin>
-        </gazebo>
-
-        <gazebo>
-            <plugin filename="libgazebo_ros_diff_drive.so" name="gazebo_base_controller1">
-            <odometry_frame>odom</odometry_frame>
-            <commandTopic>cmd_vel</commandTopic>
-            <publish_odom>true</publish_odom>
-            <publish_odom_tf>true</publish_odom_tf>
-            <update_rate>15.0</update_rate>
-            <left_joint>rotor_left_front_joint</left_joint>
-            <right_joint>rotor_right_front_joint</right_joint>
-            <wheel_separation>0.4</wheel_separation>
-            <wheel_diameter>0.13</wheel_diameter>
-            <max_wheel_acceleration>0.25</max_wheel_acceleration>
-            <robotBaseFrame>base</robotBaseFrame>
-        
-            </plugin>
-        </gazebo>
-    
-
-        <gazebo reference="base">
-        <material>Gazebo/Grey</material>
-        </gazebo>
-        <gazebo reference="bot_top">
-        <material>Gazebo/Grey</material>
-        </gazebo>
-        <gazebo reference="shaft_right_front">
-        <material>Gazebo/Grey</material>
-        </gazebo>
-        <gazebo reference="shaft_left_front">
-        <material>Gazebo/Grey</material>
-        </gazebo>
-        <gazebo reference="shaft_right_back">
-        <material>Gazebo/Grey</material>
-        </gazebo>
-        <gazebo reference="shaft_left_back">
-        <material>Gazebo/Grey</material>
-        </gazebo>
-        <gazebo reference="inner_right_front">
-        <material>Gazebo/White</material>
-        </gazebo>
-        <gazebo reference="inner_left_front">
-        <material>Gazebo/White</material>
-        </gazebo>
-        <gazebo reference="inner_right_back">
-        <material>Gazebo/White</material>
-        </gazebo>
-        <gazebo reference="inner_left_back">
-        <material>Gazebo/White</material>
-        </gazebo>
-        <gazebo reference="outer_right_front">
-        <material>Gazebo/Black</material>
-        </gazebo>
-        <gazebo reference="outer_left_front">
-        <material>Gazebo/Black</material>
-        </gazebo>
-        <gazebo reference="outer_right_back">
-        <material>Gazebo/Black</material>
-        </gazebo>
-        <gazebo reference="outer_left_back">
-        <material>Gazebo/Black</material>
-        </gazebo>
-        <gazebo reference="bot_top_plate">
-        <material>Gazebo/Grey</material>
-        </gazebo>
-        <gazebo reference="kinect_camera">
-        <material>Gazebo/Black</material>
-        </gazebo>
-        <gazebo reference="lidar">
-        <material>Gazebo/Black</material>
-        </gazebo>
-
-
-    </robot>
-    
+</robot>
