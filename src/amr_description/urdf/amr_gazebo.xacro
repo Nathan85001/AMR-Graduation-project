@@ -20,7 +20,7 @@
     </transmission>
 
             <!-- Move this one to ros2 control -->
-        <transmission name="wheel_front_right_transmission">
+    <transmission name="wheel_front_right_transmission">
     <plugin>transmission_interface/SimpleTransmission</plugin>
     <actuator name="wheel_front_right_motor" role="actuator_front_right"/>
     <joint name="wheel_front_right_joint"    role="joint_front_right">

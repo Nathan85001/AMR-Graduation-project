@@ -1,0 +1,7 @@
+[0.234s] Invoking command in '/home/nathan/amr_path_planning_ws/build/amr_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/amr_path_planning_ws/install/my_amr:/home/nathan/path_planning_ws/install/maze_bot:/opt/ros/humble /usr/bin/cmake /home/nathan/amr_path_planning_ws/src/amr_controller -DCMAKE_INSTALL_PREFIX=/home/nathan/amr_path_planning_ws/install/amr_controller
+[0.243s] [31mCMake Error at CMakeLists.txt:15 (endif):
+[0.243s]   Flow control statements are not properly nested.
+[0.243s] 
+[0.243s] [0m
+[0.243s] -- Configuring incomplete, errors occurred!
+[0.244s] Invoked command in '/home/nathan/amr_path_planning_ws/build/amr_controller' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/amr_path_planning_ws/install/my_amr:/home/nathan/path_planning_ws/install/maze_bot:/opt/ros/humble /usr/bin/cmake /home/nathan/amr_path_planning_ws/src/amr_controller -DCMAKE_INSTALL_PREFIX=/home/nathan/amr_path_planning_ws/install/amr_controller
