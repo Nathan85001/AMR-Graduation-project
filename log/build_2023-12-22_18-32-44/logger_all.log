@@ -1,0 +1,203 @@
+[2.305s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[2.306s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fd3b4151300>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fd3b4416080>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fd3b4416080>>)
+[2.398s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.398s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.398s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.398s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.398s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[2.399s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.399s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/nathan/amr_path_planning_ws'
+[2.399s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.399s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[2.399s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[2.399s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[2.399s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[2.399s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[2.399s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[2.400s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[2.400s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.418s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[2.418s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[2.418s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[2.418s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[2.418s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[2.419s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[2.419s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[2.419s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[2.419s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[2.419s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[2.419s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[2.419s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[2.420s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[2.420s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[2.420s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[2.420s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[2.420s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[2.420s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[2.420s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[2.421s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[2.421s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[2.421s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[2.421s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[2.421s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[2.421s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[2.421s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[2.421s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[2.421s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[2.421s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_controller) by extensions ['ignore', 'ignore_ament_install']
+[2.421s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_controller) by extension 'ignore'
+[2.422s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_controller) by extension 'ignore_ament_install'
+[2.422s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_controller) by extensions ['colcon_pkg']
+[2.422s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_controller) by extension 'colcon_pkg'
+[2.422s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_controller) by extensions ['colcon_meta']
+[2.422s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_controller) by extension 'colcon_meta'
+[2.422s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_controller) by extensions ['ros']
+[2.422s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_controller) by extension 'ros'
+[2.429s] DEBUG:colcon.colcon_core.package_identification:Package 'src/amr_controller' with type 'ros.ament_cmake' and name 'amr_controller'
+[2.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_description) by extensions ['ignore', 'ignore_ament_install']
+[2.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_description) by extension 'ignore'
+[2.429s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_description) by extension 'ignore_ament_install'
+[2.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_description) by extensions ['colcon_pkg']
+[2.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_description) by extension 'colcon_pkg'
+[2.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_description) by extensions ['colcon_meta']
+[2.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_description) by extension 'colcon_meta'
+[2.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_description) by extensions ['ros']
+[2.430s] Level 1:colcon.colcon_core.package_identification:_identify(src/amr_description) by extension 'ros'
+[2.431s] DEBUG:colcon.colcon_core.package_identification:Package 'src/amr_description' with type 'ros.ament_cmake' and name 'amr_description'
+[2.431s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.431s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.431s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.431s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.431s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.628s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.628s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.698s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/nathan/amr_path_planning_ws/install
+[2.742s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/nathan/amr_ws/install
+[2.771s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 16 installed packages in /home/nathan/path_planning_ws/install
+[2.800s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 298 installed packages in /opt/ros/humble
+[2.802s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.998s] Level 5:colcon.colcon_core.verb:set package 'amr_controller' build argument 'cmake_args' from command line to 'None'
+[2.998s] Level 5:colcon.colcon_core.verb:set package 'amr_controller' build argument 'cmake_target' from command line to 'None'
+[2.998s] Level 5:colcon.colcon_core.verb:set package 'amr_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.998s] Level 5:colcon.colcon_core.verb:set package 'amr_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[2.998s] Level 5:colcon.colcon_core.verb:set package 'amr_controller' build argument 'cmake_clean_first' from command line to 'False'
+[2.998s] Level 5:colcon.colcon_core.verb:set package 'amr_controller' build argument 'cmake_force_configure' from command line to 'False'
+[2.998s] Level 5:colcon.colcon_core.verb:set package 'amr_controller' build argument 'ament_cmake_args' from command line to 'None'
+[2.998s] Level 5:colcon.colcon_core.verb:set package 'amr_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[2.998s] Level 5:colcon.colcon_core.verb:set package 'amr_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.998s] DEBUG:colcon.colcon_core.verb:Building package 'amr_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nathan/amr_path_planning_ws/build/amr_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nathan/amr_path_planning_ws/install/amr_controller', 'merge_install': False, 'path': '/home/nathan/amr_path_planning_ws/src/amr_controller', 'symlink_install': False, 'test_result_base': None}
+[3.030s] Level 5:colcon.colcon_core.verb:set package 'amr_description' build argument 'cmake_args' from command line to 'None'
+[3.031s] Level 5:colcon.colcon_core.verb:set package 'amr_description' build argument 'cmake_target' from command line to 'None'
+[3.031s] Level 5:colcon.colcon_core.verb:set package 'amr_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.031s] Level 5:colcon.colcon_core.verb:set package 'amr_description' build argument 'cmake_clean_cache' from command line to 'False'
+[3.031s] Level 5:colcon.colcon_core.verb:set package 'amr_description' build argument 'cmake_clean_first' from command line to 'False'
+[3.031s] Level 5:colcon.colcon_core.verb:set package 'amr_description' build argument 'cmake_force_configure' from command line to 'False'
+[3.031s] Level 5:colcon.colcon_core.verb:set package 'amr_description' build argument 'ament_cmake_args' from command line to 'None'
+[3.031s] Level 5:colcon.colcon_core.verb:set package 'amr_description' build argument 'catkin_cmake_args' from command line to 'None'
+[3.031s] Level 5:colcon.colcon_core.verb:set package 'amr_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.031s] DEBUG:colcon.colcon_core.verb:Building package 'amr_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nathan/amr_path_planning_ws/build/amr_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nathan/amr_path_planning_ws/install/amr_description', 'merge_install': False, 'path': '/home/nathan/amr_path_planning_ws/src/amr_description', 'symlink_install': False, 'test_result_base': None}
+[3.058s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[3.089s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[3.089s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nathan/amr_path_planning_ws/src/amr_controller' with build type 'ament_cmake'
+[3.089s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nathan/amr_path_planning_ws/src/amr_controller'
+[3.126s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[3.126s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.126s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.297s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nathan/amr_path_planning_ws/src/amr_description' with build type 'ament_cmake'
+[3.297s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nathan/amr_path_planning_ws/src/amr_description'
+[3.328s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.328s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.467s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nathan/amr_path_planning_ws/build/amr_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/amr_path_planning_ws/install/my_amr:/home/nathan/path_planning_ws/install/maze_bot:/opt/ros/humble /usr/bin/cmake --build /home/nathan/amr_path_planning_ws/build/amr_controller -- -j12 -l12
+[3.475s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nathan/amr_path_planning_ws/build/amr_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/amr_path_planning_ws/install/my_amr:/home/nathan/path_planning_ws/install/maze_bot:/opt/ros/humble /usr/bin/cmake --build /home/nathan/amr_path_planning_ws/build/amr_description -- -j12 -l12
+[3.522s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nathan/amr_path_planning_ws/build/amr_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/amr_path_planning_ws/install/my_amr:/home/nathan/path_planning_ws/install/maze_bot:/opt/ros/humble /usr/bin/cmake --build /home/nathan/amr_path_planning_ws/build/amr_controller -- -j12 -l12
+[3.528s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nathan/amr_path_planning_ws/build/amr_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/amr_path_planning_ws/install/my_amr:/home/nathan/path_planning_ws/install/maze_bot:/opt/ros/humble /usr/bin/cmake --build /home/nathan/amr_path_planning_ws/build/amr_description -- -j12 -l12
+[3.559s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nathan/amr_path_planning_ws/build/amr_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/amr_path_planning_ws/install/my_amr:/home/nathan/path_planning_ws/install/maze_bot:/opt/ros/humble /usr/bin/cmake --install /home/nathan/amr_path_planning_ws/build/amr_controller
+[3.562s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nathan/amr_path_planning_ws/build/amr_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/amr_path_planning_ws/install/my_amr:/home/nathan/path_planning_ws/install/maze_bot:/opt/ros/humble /usr/bin/cmake --install /home/nathan/amr_path_planning_ws/build/amr_description
+[3.571s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(amr_controller)
+[3.572s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nathan/amr_path_planning_ws/build/amr_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/amr_path_planning_ws/install/my_amr:/home/nathan/path_planning_ws/install/maze_bot:/opt/ros/humble /usr/bin/cmake --install /home/nathan/amr_path_planning_ws/build/amr_controller
+[3.609s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/amr_path_planning_ws/install/amr_controller' for CMake module files
+[3.609s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/amr_path_planning_ws/install/amr_controller' for CMake config files
+[3.610s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_controller', 'cmake_prefix_path')
+[3.631s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/hook/cmake_prefix_path.ps1'
+[3.632s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/hook/cmake_prefix_path.dsv'
+[3.633s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/hook/cmake_prefix_path.sh'
+[3.634s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/amr_path_planning_ws/install/amr_controller/bin'
+[3.634s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/amr_path_planning_ws/install/amr_controller/lib/pkgconfig/amr_controller.pc'
+[3.635s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/amr_path_planning_ws/install/amr_controller/lib/python3.10/site-packages'
+[3.635s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/amr_path_planning_ws/install/amr_controller/bin'
+[3.664s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/package.ps1'
+[3.666s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/package.dsv'
+[3.666s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/package.sh'
+[3.668s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/package.bash'
+[3.669s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/package.zsh'
+[3.670s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nathan/amr_path_planning_ws/install/amr_controller/share/colcon-core/packages/amr_controller)
+[3.672s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(amr_description)
+[3.672s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nathan/amr_path_planning_ws/build/amr_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/amr_path_planning_ws/install/my_amr:/home/nathan/path_planning_ws/install/maze_bot:/opt/ros/humble /usr/bin/cmake --install /home/nathan/amr_path_planning_ws/build/amr_description
+[3.702s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/amr_path_planning_ws/install/amr_description' for CMake module files
+[3.702s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/amr_path_planning_ws/install/amr_description' for CMake config files
+[3.703s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_description', 'cmake_prefix_path')
+[3.731s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/hook/cmake_prefix_path.ps1'
+[3.732s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/hook/cmake_prefix_path.dsv'
+[3.732s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/hook/cmake_prefix_path.sh'
+[3.733s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/amr_path_planning_ws/install/amr_description/bin'
+[3.733s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/amr_path_planning_ws/install/amr_description/lib/pkgconfig/amr_description.pc'
+[3.734s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/amr_path_planning_ws/install/amr_description/lib/python3.10/site-packages'
+[3.734s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/amr_path_planning_ws/install/amr_description/bin'
+[3.764s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/package.ps1'
+[3.764s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/package.dsv'
+[3.765s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/package.sh'
+[3.765s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/package.bash'
+[3.766s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/package.zsh'
+[3.766s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nathan/amr_path_planning_ws/install/amr_description/share/colcon-core/packages/amr_description)
+[3.799s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(amr_controller)
+[3.829s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/amr_path_planning_ws/install/amr_controller' for CMake module files
+[3.830s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/amr_path_planning_ws/install/amr_controller' for CMake config files
+[3.830s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_controller', 'cmake_prefix_path')
+[3.859s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/hook/cmake_prefix_path.ps1'
+[3.860s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/hook/cmake_prefix_path.dsv'
+[3.860s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/hook/cmake_prefix_path.sh'
+[3.861s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/amr_path_planning_ws/install/amr_controller/bin'
+[3.861s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/amr_path_planning_ws/install/amr_controller/lib/pkgconfig/amr_controller.pc'
+[3.861s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/amr_path_planning_ws/install/amr_controller/lib/python3.10/site-packages'
+[3.862s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/amr_path_planning_ws/install/amr_controller/bin'
+[3.891s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/package.ps1'
+[3.892s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/package.dsv'
+[3.892s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/package.sh'
+[3.893s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/package.bash'
+[3.893s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/package.zsh'
+[3.894s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nathan/amr_path_planning_ws/install/amr_controller/share/colcon-core/packages/amr_controller)
+[3.924s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(amr_description)
+[3.953s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/amr_path_planning_ws/install/amr_description' for CMake module files
+[3.954s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/amr_path_planning_ws/install/amr_description' for CMake config files
+[3.954s] Level 1:colcon.colcon_core.shell:create_environment_hook('amr_description', 'cmake_prefix_path')
+[3.983s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/hook/cmake_prefix_path.ps1'
+[3.984s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/hook/cmake_prefix_path.dsv'
+[3.984s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/hook/cmake_prefix_path.sh'
+[3.985s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/amr_path_planning_ws/install/amr_description/bin'
+[3.985s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/amr_path_planning_ws/install/amr_description/lib/pkgconfig/amr_description.pc'
+[3.985s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/amr_path_planning_ws/install/amr_description/lib/python3.10/site-packages'
+[3.986s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/amr_path_planning_ws/install/amr_description/bin'
+[4.015s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/package.ps1'
+[4.016s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/package.dsv'
+[4.016s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/package.sh'
+[4.017s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/package.bash'
+[4.017s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/package.zsh'
+[4.018s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nathan/amr_path_planning_ws/install/amr_description/share/colcon-core/packages/amr_description)
+[4.018s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.019s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.019s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.019s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.056s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.056s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.056s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.070s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.100s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nathan/amr_path_planning_ws/install/local_setup.ps1'
+[4.102s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/nathan/amr_path_planning_ws/install/_local_setup_util_ps1.py'
+[4.104s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nathan/amr_path_planning_ws/install/setup.ps1'
+[4.136s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nathan/amr_path_planning_ws/install/local_setup.sh'
+[4.137s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/nathan/amr_path_planning_ws/install/_local_setup_util_sh.py'
+[4.138s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nathan/amr_path_planning_ws/install/setup.sh'
+[4.171s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nathan/amr_path_planning_ws/install/local_setup.bash'
+[4.172s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nathan/amr_path_planning_ws/install/setup.bash'
+[4.204s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nathan/amr_path_planning_ws/install/local_setup.zsh'
+[4.205s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nathan/amr_path_planning_ws/install/setup.zsh'
