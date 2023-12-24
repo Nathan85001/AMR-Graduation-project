@@ -13,6 +13,7 @@
         "/home/nathan/path_planning_ws/install/ros_gz_interfaces/include/**",
         "/opt/ros/humble/include/**",
         "/home/nathan/amr_path_planning_ws/src/amr_description/include/**",
+        "/home/nathan/amr_path_planning_ws/src/**", // Added this line
         "/usr/include/**"
       ],
       "name": "ROS",

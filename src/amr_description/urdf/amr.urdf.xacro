@@ -621,7 +621,7 @@
     joint for kinect
     -->
         <joint name="kinect_camera_joint" type="fixed">
-        <origin xyz="0.23 0.0 0.07" rpy="0.0 0.0 3.14"/>
+        <origin xyz="0.23 0.0 0.07" rpy="0.0 0.0 0"/>
         <parent link="bot_top"/>
         <child link="kinect_camera"/>
         <axis xyz="0.0 0.0 0"/>
