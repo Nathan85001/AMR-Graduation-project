@@ -447,3 +447,55 @@ Parsed CXX implicit link information from above output:
   implicit fwks: []
 
 
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/nathan/amr_path_planning_ws/build/amr_controller/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_fc9fb/fast && gmake[1]: Entering directory '/home/nathan/amr_path_planning_ws/build/amr_controller/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_fc9fb.dir/build.make CMakeFiles/cmTC_fc9fb.dir/build
+gmake[2]: Entering directory '/home/nathan/amr_path_planning_ws/build/amr_controller/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fc9fb.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_fc9fb.dir/CheckIncludeFile.c.o -c /home/nathan/amr_path_planning_ws/build/amr_controller/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_fc9fb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fc9fb.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_fc9fb.dir/CheckIncludeFile.c.o -o cmTC_fc9fb 
+gmake[2]: Leaving directory '/home/nathan/amr_path_planning_ws/build/amr_controller/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/home/nathan/amr_path_planning_ws/build/amr_controller/CMakeFiles/CMakeTmp'
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /home/nathan/amr_path_planning_ws/build/amr_controller/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d02c9/fast && gmake[1]: Entering directory '/home/nathan/amr_path_planning_ws/build/amr_controller/CMakeFiles/CMakeTmp'
+/usr/bin/gmake  -f CMakeFiles/cmTC_d02c9.dir/build.make CMakeFiles/cmTC_d02c9.dir/build
+gmake[2]: Entering directory '/home/nathan/amr_path_planning_ws/build/amr_controller/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d02c9.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_d02c9.dir/src.c.o -c /home/nathan/amr_path_planning_ws/build/amr_controller/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_d02c9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d02c9.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_d02c9.dir/src.c.o -o cmTC_d02c9 
+gmake[2]: Leaving directory '/home/nathan/amr_path_planning_ws/build/amr_controller/CMakeFiles/CMakeTmp'
+gmake[1]: Leaving directory '/home/nathan/amr_path_planning_ws/build/amr_controller/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+

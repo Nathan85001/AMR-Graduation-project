@@ -1,0 +1,35 @@
+[0.233s] Invoking command in '/home/nathan/amr_path_planning_ws/build/amr_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/amr_path_planning_ws/install/my_amr:/home/nathan/path_planning_ws/install/maze_bot:/opt/ros/humble /usr/bin/cmake --build /home/nathan/amr_path_planning_ws/build/amr_controller -- -j12 -l12
+[0.269s] [35m[1mConsolidate compiler generated dependencies of target simple_controller[0m
+[0.284s] [ 50%] [32mBuilding CXX object CMakeFiles/simple_controller.dir/src/simple_controller.cpp.o[0m
+[9.277s] [100%] [32m[1mLinking CXX executable simple_controller[0m
+[9.609s] [100%] Built target simple_controller
+[9.617s] Invoked command in '/home/nathan/amr_path_planning_ws/build/amr_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/amr_path_planning_ws/install/my_amr:/home/nathan/path_planning_ws/install/maze_bot:/opt/ros/humble /usr/bin/cmake --build /home/nathan/amr_path_planning_ws/build/amr_controller -- -j12 -l12
+[9.634s] Invoking command in '/home/nathan/amr_path_planning_ws/build/amr_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/amr_path_planning_ws/install/my_amr:/home/nathan/path_planning_ws/install/maze_bot:/opt/ros/humble /usr/bin/cmake --install /home/nathan/amr_path_planning_ws/build/amr_controller
+[9.640s] -- Install configuration: ""
+[9.640s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/include/include
+[9.640s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/include/include/amr_controller
+[9.640s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/include/include/amr_controller/simple_controller.hpp
+[9.641s] -- Installing: /home/nathan/amr_path_planning_ws/install/amr_controller/lib/amr_controller/simple_controller
+[9.644s] -- Set runtime path of "/home/nathan/amr_path_planning_ws/install/amr_controller/lib/amr_controller/simple_controller" to ""
+[9.644s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/launch
+[9.644s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/launch/controller.launch.py
+[9.644s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/config
+[9.644s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/config/amr_controllers.yaml
+[9.644s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/config/joy_config.yaml
+[9.644s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/config/joy_teleop.yaml
+[9.644s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/ament_index/resource_index/package_run_dependencies/amr_controller
+[9.644s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/ament_index/resource_index/parent_prefix_path/amr_controller
+[9.644s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/environment/ament_prefix_path.sh
+[9.644s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/environment/ament_prefix_path.dsv
+[9.644s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/environment/path.sh
+[9.644s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/environment/path.dsv
+[9.645s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/local_setup.bash
+[9.645s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/local_setup.sh
+[9.645s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/local_setup.zsh
+[9.645s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/local_setup.dsv
+[9.645s] -- Installing: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/package.dsv
+[9.645s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/ament_index/resource_index/packages/amr_controller
+[9.645s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/cmake/amr_controllerConfig.cmake
+[9.645s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/cmake/amr_controllerConfig-version.cmake
+[9.645s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/package.xml
+[9.646s] Invoked command in '/home/nathan/amr_path_planning_ws/build/amr_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/amr_path_planning_ws/install/my_amr:/home/nathan/path_planning_ws/install/maze_bot:/opt/ros/humble /usr/bin/cmake --install /home/nathan/amr_path_planning_ws/build/amr_controller

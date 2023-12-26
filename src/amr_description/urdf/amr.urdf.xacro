@@ -14,7 +14,12 @@
         <inertial>
         <origin xyz="0 0 0.1" rpy="0 0 0" />
         <mass value="8.34"/>
-        <inertia ixx="0.002386469" iyy="0.004827723" izz="0.003252219" ixy="0.0" ixz="0.0" iyz="0.0" />        </inertial>
+        <inertia ixx= "2386468.63e-7"
+        ixy = "-261456.79e-7"
+        iyy = "4827722.72e-7"
+        ixz= "76941.00e-7"
+        iyz = "57814.62e-7"
+        izz = "3252219.31e-7"/></inertial>
         <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
@@ -44,8 +49,13 @@
     <link name="shaft_right_front">
         <inertial>
         <mass value="0.06175"/>
-        <inertia ixx="0.000001112" iyy="0.000101416" izz="0.000101416" ixy="0.0" ixz="0.0" iyz="0.0"/>
-        <origin/>
+        <inertia
+        ixx="1111.52e-7" 
+        iyy="101415.96e-7" 
+        izz="101415.96e-7" 
+        ixy="0.0" 
+        ixz="0.0" 
+        iyz="0.0"/>
         </inertial>
     
         <visual>
@@ -63,7 +73,6 @@
             <geometry>
                 <mesh filename="package://amr_description/meshes/shaft_final.stl"/>
             </geometry>
-            <contact_coefficients mu="0" kp="1000.0" kd="1.0"/>
         </collision>
 
         </link>
@@ -71,8 +80,13 @@
     <link name="inner_right_front">
         <inertial>
         <mass value="0.94"/>
-        <inertia ixx="0.001752394" iyy="0.001233251" izz="0.001233251" ixy="0.0" ixz="0.0" iyz="0.0"/>
-        <origin/>
+        <inertia 
+        ixx="1752393.51e-7" 
+        iyy="1233250.95e-7" 
+        izz="1233250.94e-7" 
+        ixy="-0.01e-7" 
+        ixz="-0.05e-7" 
+        iyz="0.1e-7"/>
         </inertial>
     
         <visual>
@@ -90,7 +104,6 @@
             <geometry>
                 <mesh filename="package://amr_description/meshes/inner_final.stl"/>
             </geometry>
-            <contact_coefficients mu="0" kp="0.0" kd="0.0"/>
         </collision>
 
         </link>
@@ -98,8 +111,13 @@
     <link name="outer_right_front">
         <inertial>
         <mass value="0.11614"/>
-        <inertia ixx="0.00036673" iyy="0.00036673" izz="0.000435441" ixy="0.0" ixz="0.0" iyz="0.0"/>
-        <origin/>
+        <inertia 
+        ixx="366729.55e-7" 
+        iyy="366729.55e-7" 
+        izz="435440.86e-7" 
+        ixy="0.0" 
+        ixz="0.0" 
+        iyz="0.0"/>
         </inertial>
     
         <visual>
@@ -117,7 +135,6 @@
             <geometry>
                 <mesh filename="package://amr_description/meshes/outer_final.stl"/>
             </geometry>
-            <contact_coefficients mu="0" kp="0.0" kd="0.0"/>
         </collision>
 
         </link>
@@ -129,7 +146,13 @@
     <link name="shaft_left_front">
         <inertial>
         <mass value="0.06175"/>
-        <inertia ixx="0.000001112" iyy="0.000101416" izz="0.000101416" ixy="0.0" ixz="0.0" iyz="0.0"/>
+        <inertia
+        ixx="1111.52e-7" 
+        iyy="101415.96e-7" 
+        izz="101415.96e-7" 
+        ixy="0.0" 
+        ixz="0.0" 
+        iyz="0.0"/>
         <origin/>
         </inertial>
     
@@ -148,7 +171,6 @@
             <geometry>
                 <mesh filename="package://amr_description/meshes/shaft_final.stl"/>
             </geometry>
-            <contact_coefficients mu="0" kp="1000.0" kd="1.0"/>
         </collision>
 
         </link>
@@ -156,8 +178,13 @@
     <link name="inner_left_front">
         <inertial>
         <mass value="0.94"/>
-        <inertia ixx="0.001752394" iyy="0.001233251" izz="0.001233251" ixy="0.0" ixz="0.0" iyz="0.0"/>
-        <origin/>
+        <inertia 
+        ixx="1752393.51e-7" 
+        iyy="1233250.95e-7" 
+        izz="1233250.94e-7" 
+        ixy="-0.01e-7" 
+        ixz="-0.05e-7" 
+        iyz="0.1e-7"/>
         </inertial>
     
         <visual>
@@ -175,7 +202,6 @@
             <geometry>
                 <mesh filename="package://amr_description/meshes/inner_final.stl"/>
             </geometry>
-            <contact_coefficients mu="0" kp="0.0" kd="0.0"/>
         </collision>
 
         </link>
@@ -183,8 +209,13 @@
     <link name="outer_left_front">
         <inertial>
         <mass value="0.11614"/>
-        <inertia ixx="0.00036673" iyy="0.00036673" izz="0.000435441" ixy="0.0" ixz="0.0" iyz="0.0"/>
-        <origin/>
+        <inertia 
+        ixx="366729.55e-7" 
+        iyy="366729.55e-7" 
+        izz="435440.86e-7" 
+        ixy="0.0" 
+        ixz="0.0" 
+        iyz="0.0"/>
         </inertial>
     
         <visual>
@@ -202,7 +233,6 @@
             <geometry>
                 <mesh filename="package://amr_description/meshes/outer_final.stl"/>
             </geometry>
-            <contact_coefficients mu="0" kp="0.0" kd="0.0"/>
         </collision>
 
         </link>
@@ -214,7 +244,13 @@
     <link name="shaft_left_back">
         <inertial>
         <mass value="0.06175"/>
-        <inertia ixx="0.000001112" iyy="0.000101416" izz="0.000101416" ixy="0.0" ixz="0.0" iyz="0.0"/>
+        <inertia
+        ixx="1111.52e-7" 
+        iyy="101415.96e-7" 
+        izz="101415.96e-7" 
+        ixy="0.0" 
+        ixz="0.0" 
+        iyz="0.0"/>
         <origin/>
         </inertial>
     
@@ -233,7 +269,6 @@
             <geometry>
                 <mesh filename="package://amr_description/meshes/shaft_final.stl"/>
             </geometry>
-            <contact_coefficients mu="0" kp="1000.0" kd="1.0"/>
         </collision>
 
         </link>
@@ -241,8 +276,13 @@
     <link name="inner_left_back">
         <inertial>
         <mass value="0.94"/>
-        <inertia ixx="0.001752394" iyy="0.001233251" izz="0.001233251" ixy="0.0" ixz="0.0" iyz="0.0"/>
-        <origin/>
+        <inertia 
+        ixx="1752393.51e-7" 
+        iyy="1233250.95e-7" 
+        izz="1233250.94e-7" 
+        ixy="-0.01e-7" 
+        ixz="-0.05e-7" 
+        iyz="0.1e-7"/>
         </inertial>
     
         <visual>
@@ -260,7 +300,6 @@
             <geometry>
                 <mesh filename="package://amr_description/meshes/inner_final.stl"/>
             </geometry>
-            <contact_coefficients mu="0" kp="0.0" kd="0.0"/>
         </collision>
 
         </link>
@@ -268,8 +307,13 @@
     <link name="outer_left_back">
         <inertial>
         <mass value="0.11614"/>
-        <inertia ixx="0.00036673" iyy="0.00036673" izz="0.000435441" ixy="0.0" ixz="0.0" iyz="0.0"/>
-        <origin/>
+        <inertia 
+        ixx="366729.55e-7" 
+        iyy="366729.55e-7" 
+        izz="435440.86e-7" 
+        ixy="0.0" 
+        ixz="0.0" 
+        iyz="0.0"/>
         </inertial>
     
         <visual>
@@ -287,7 +331,6 @@
             <geometry>
                 <mesh filename="package://amr_description/meshes/outer_final.stl"/>
             </geometry>
-            <contact_coefficients mu="0" kp="0.0" kd="0.0"/>
         </collision>
 
         </link>
@@ -299,7 +342,13 @@
     <link name="shaft_right_back">
         <inertial>
         <mass value="0.06175"/>
-        <inertia ixx="0.000001112" iyy="0.000101416" izz="0.000101416" ixy="0.0" ixz="0.0" iyz="0.0"/>
+        <inertia
+        ixx="1111.52e-7" 
+        iyy="101415.96e-7" 
+        izz="101415.96e-7" 
+        ixy="0.0" 
+        ixz="0.0" 
+        iyz="0.0"/>
         <origin/>
         </inertial>
     
@@ -318,7 +367,6 @@
             <geometry>
                 <mesh filename="package://amr_description/meshes/shaft_final.stl"/>
             </geometry>
-            <contact_coefficients mu="0" kp="1000.0" kd="1.0"/>
         </collision>
 
         </link>
@@ -326,8 +374,13 @@
     <link name="inner_right_back">
         <inertial>
         <mass value="0.94"/>
-        <inertia ixx="0.001752394" iyy="0.001233251" izz="0.001233251" ixy="0.0" ixz="0.0" iyz="0.0"/>
-        <origin/>
+        <inertia 
+        ixx="1752393.51e-7" 
+        iyy="1233250.95e-7" 
+        izz="1233250.94e-7" 
+        ixy="-0.01e-7" 
+        ixz="-0.05e-7" 
+        iyz="0.1e-7"/>
         </inertial>
     
         <visual>
@@ -345,7 +398,6 @@
             <geometry>
                 <mesh filename="package://amr_description/meshes/inner_final.stl"/>
             </geometry>
-            <contact_coefficients mu="0" kp="0.0" kd="0.0"/>
         </collision>
 
         </link>
@@ -353,8 +405,13 @@
     <link name="outer_right_back">
         <inertial>
         <mass value="0.11614"/>
-        <inertia ixx="0.00036673" iyy="0.00036673" izz="0.000435441" ixy="0.0" ixz="0.0" iyz="0.0"/>
-        <origin/>
+        <inertia 
+        ixx="366729.55e-7" 
+        iyy="366729.55e-7" 
+        izz="435440.86e-7" 
+        ixy="0.0" 
+        ixz="0.0" 
+        iyz="0.0"/>
         </inertial>
     
         <visual>
@@ -372,7 +429,6 @@
             <geometry>
                 <mesh filename="package://amr_description/meshes/outer_final.stl"/>
             </geometry>
-            <contact_coefficients mu="0" kp="0.0" kd="0.0"/>
         </collision>
 
         </link>
@@ -384,8 +440,13 @@
     <link name="bot_top">
         <inertial>
         <mass value="8.47"/>
-        <inertia ixx="0.002307898" iyy="0.004479378" izz="0.002685416" ixy="0.0" ixz="0.0" iyz="0.0"/>
-        <origin/>
+        <inertia 
+        ixx="2307897.72e-7" 
+        iyy="4479377.88e-7" 
+        izz="2685416.48e-7" 
+        ixy="-25244.68e-7" 
+        ixz="18060.35e-7" 
+        iyz="-37339.81e-7"/>
         </inertial>
     
         <visual>
@@ -403,7 +464,6 @@
             <geometry>
                 <mesh filename="package://amr_description/meshes/top_final.stl"/>
             </geometry>
-            <contact_coefficients mu="0" kp="0.0" kd="0.0"/>
         </collision>
 
         </link>
@@ -415,8 +475,13 @@
     <link name="bot_top_plate">
         <inertial>
         <mass value="2.54605"/>
-        <inertia ixx="0.000065178" iyy="0.000128019" izz="0.000065178" ixy="0.0" ixz="0.0" iyz="0.0"/>
-        <origin/>
+        <inertia 
+        ixx="65177.65e-7" 
+        iyy="128018.71e-7" 
+        izz="65177.65e-7" 
+        ixy="0.0" 
+        ixz="0.0" 
+        iyz="0.0"/>
         </inertial>
     
         <visual>
@@ -434,7 +499,6 @@
             <geometry>
                 <mesh filename="package://amr_description/meshes/top_final.stl"/>
             </geometry>
-            <contact_coefficients mu="0" kp="0.0" kd="0.0"/>
         </collision>
 
         </link>
@@ -465,7 +529,6 @@
             <geometry>
                 <mesh filename="package://amr_description/meshes/kinect.stl"/>
             </geometry>
-            <contact_coefficients mu="0" kp="0.0" kd="0.0"/>
         </collision>
 
         </link>
@@ -496,7 +559,6 @@
             <geometry>
                 <mesh filename="package://amr_description/meshes/lidar.stl"/>
             </geometry>
-            <contact_coefficients mu="0" kp="0.0" kd="0.0"/>
         </collision>
 
         </link>

@@ -21,7 +21,9 @@ SimpleController::SimpleController(const std::string& name)
     vel_sub_ = create_subscription<geometry_msgs::msg::TwistStamped>("/amr_controller/cmd_vel", 10, std::bind(&SimpleController::velCallback, this, _1));
 
 speed_conversion_ << wheel_radius_/2, wheel_radius_/2, wheel_radius_/2, wheel_radius_/2,
-                    wheel_radius_/wheel_separation_lr_, -wheel_radius_/wheel_separation_lr_, wheel_radius_/wheel_separation_fr_, -wheel_radius_/wheel_separation_fr_;    
+                    wheel_radius_/wheel_separation_lr_, -wheel_radius_/wheel_separation_lr_, 0, 0,
+                    0, 0, wheel_radius_/wheel_separation_fr_, -wheel_radius_/wheel_separation_fr_,
+                    0, 0, 0, 0;
                     RCLCPP_INFO_STREAM(get_logger(), "The conversion matrix is \n" << speed_conversion_);
 }
 

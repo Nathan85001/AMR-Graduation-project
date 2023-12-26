@@ -11,26 +11,33 @@ def generate_launch_description():
         "use_simple_controller",
         default_value="True",
     )
-    use_python_arg = DeclareLaunchArgument(
-        "use_python",
+    # use_python_arg = DeclareLaunchArgument(
+    #     "use_python",
+    #     default_value="False",
+    # )
+    
+    use_cpp_arg = DeclareLaunchArgument(
+        "use_cpp",
         default_value="False",
     )
+    
     wheel_radius_arg = DeclareLaunchArgument(
         "wheel_radius",
         default_value="0.033",
     )
     wheel_separation_lr_arg = DeclareLaunchArgument(
-        "wheel_separation",
+        "wheel_separation_lr",
         default_value="0.17",
     )
     
     wheel_separation_fr_arg = DeclareLaunchArgument(
-        "wheel_separation",
+        "wheel_separation_fr",
         default_value="0.17",
     )
     
     use_simple_controller = LaunchConfiguration("use_simple_controller")
-    use_python = LaunchConfiguration("use_python")
+    # use_python = LaunchConfiguration("use_python")
+    use_cpp = LaunchConfiguration("use_cpp")
     wheel_radius = LaunchConfiguration("wheel_radius")
     wheel_separation_lr = LaunchConfiguration("wheel_separation_lr")
     wheel_separation_fr = LaunchConfiguration("wheel_separation_fr")
@@ -66,15 +73,33 @@ def generate_launch_description():
                             "/controller_manager"
                 ]
             ),
+            # Node(
+            #     package="amr_controller",
+            #     executable="simple_controller.py",
+            #     parameters=[
+            #         {"wheel_radius": wheel_radius,
+            #             "wheel_separation_lr": wheel_separation_lr,
+            #             "wheel_separation_fr": wheel_separation_fr}],
+            #     condition=IfCondition(use_python),
+            # ),
             Node(
                 package="amr_controller",
-                executable="simple_controller.py",
+                executable="simple_controller.cpp",
                 parameters=[
                     {"wheel_radius": wheel_radius,
                         "wheel_separation_lr": wheel_separation_lr,
                         "wheel_separation_fr": wheel_separation_fr}],
-                condition=IfCondition(use_python),
+                condition=IfCondition(use_cpp),
             ),
+            # Node(
+            #     package="amr_controller",
+            #     executable="simple_controller",
+            #     parameters=[
+            #         {"wheel_radius": wheel_radius,
+            #             "wheel_separation_lr": wheel_separation_lr,
+            #             "wheel_separation_fr": wheel_separation_fr}],
+            #     condition=UnlessCondition(use_python),
+            # ),
             Node(
                 package="amr_controller",
                 executable="simple_controller",
@@ -82,7 +107,7 @@ def generate_launch_description():
                     {"wheel_radius": wheel_radius,
                         "wheel_separation_lr": wheel_separation_lr,
                         "wheel_separation_fr": wheel_separation_fr}],
-                condition=UnlessCondition(use_python),
+                condition=UnlessCondition(use_cpp),
             ),
         ]
     )
@@ -90,7 +115,8 @@ def generate_launch_description():
     return LaunchDescription(
         [
             use_simple_controller_arg,
-            use_python_arg,
+            # use_python_arg,
+            use_cpp_arg,
             wheel_radius_arg,
             wheel_separation_lr_arg,
             wheel_separation_fr_arg,

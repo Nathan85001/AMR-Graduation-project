@@ -1,0 +1,43 @@
+-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found rclpy: 3.3.11 (/opt/ros/humble/share/rclpy/cmake)
+-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/nathan/amr_path_planning_ws/build/amr_controller
+[35m[1mConsolidate compiler generated dependencies of target simple_controller[0m
+[100%] Built target simple_controller
+-- Install configuration: ""
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/include/include
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/include/include/amr_controller
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/include/include/amr_controller/simple_controller.hpp
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/lib/amr_controller/simple_controller
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/launch
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/launch/controller.launch.py
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/config
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/config/amr_controllers.yaml
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/config/joy_config.yaml
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/config/joy_teleop.yaml
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_controller/share/ament_index/resource_index/package_run_dependencies/amr_controller
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_controller/share/ament_index/resource_index/parent_prefix_path/amr_controller
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/environment/ament_prefix_path.sh
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/environment/path.sh
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/environment/path.dsv
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/local_setup.bash
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/local_setup.sh
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/local_setup.zsh
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/local_setup.dsv
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/package.dsv
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/ament_index/resource_index/packages/amr_controller
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/cmake/amr_controllerConfig.cmake
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/cmake/amr_controllerConfig-version.cmake
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/package.xml

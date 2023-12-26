@@ -1,0 +1,6 @@
+[31mCMake Error at cmake_install.cmake:77 (file):
+  file INSTALL cannot find
+  "/home/nathan/amr_path_planning_ws/src/amr_controller/amr_controller/simple_controller.py":
+  No such file or directory.
+
+[0m

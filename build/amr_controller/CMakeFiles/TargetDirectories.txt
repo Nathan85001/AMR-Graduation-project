@@ -1,5 +1,6 @@
 /home/nathan/amr_path_planning_ws/build/amr_controller/CMakeFiles/uninstall.dir
 /home/nathan/amr_path_planning_ws/build/amr_controller/CMakeFiles/amr_controller_uninstall.dir
+/home/nathan/amr_path_planning_ws/build/amr_controller/CMakeFiles/simple_controller.dir
 /home/nathan/amr_path_planning_ws/build/amr_controller/CMakeFiles/test.dir
 /home/nathan/amr_path_planning_ws/build/amr_controller/CMakeFiles/edit_cache.dir
 /home/nathan/amr_path_planning_ws/build/amr_controller/CMakeFiles/rebuild_cache.dir

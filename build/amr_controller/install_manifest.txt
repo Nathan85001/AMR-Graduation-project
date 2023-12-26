@@ -1,5 +1,9 @@
+/home/nathan/amr_path_planning_ws/install/amr_controller/include/include/amr_controller/simple_controller.hpp
+/home/nathan/amr_path_planning_ws/install/amr_controller/lib/amr_controller/simple_controller
 /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/launch/controller.launch.py
 /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/config/amr_controllers.yaml
+/home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/config/joy_config.yaml
+/home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/config/joy_teleop.yaml
 /home/nathan/amr_path_planning_ws/install/amr_controller/share/ament_index/resource_index/package_run_dependencies/amr_controller
 /home/nathan/amr_path_planning_ws/install/amr_controller/share/ament_index/resource_index/parent_prefix_path/amr_controller
 /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/environment/ament_prefix_path.sh
