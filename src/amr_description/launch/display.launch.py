@@ -44,4 +44,7 @@ def generate_launch_description():
         joint_state_publisher_gui_node,
         robot_state_publisher_node,
         rviz_node
+        launch_ros.actions.Node(
+            package='ign_rviz', executable='ign_rviz', output='screen'
+        ),
     ])

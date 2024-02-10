@@ -1,0 +1,47 @@
+[0.307s] Invoking command in '/home/nathan/amr_path_planning_ws/build/amr_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/path_planning_ws/install/maze_bot:/opt/ros/humble /usr/bin/cmake --build /home/nathan/amr_path_planning_ws/build/amr_controller -- -j12 -l12
+[0.351s] [35m[1mConsolidate compiler generated dependencies of target simple_controller[0m
+[0.369s] [ 50%] [32mBuilding CXX object CMakeFiles/simple_controller.dir/src/simple_controller.cpp.o[0m
+[3.735s] In file included from [01m[K/home/nathan/amr_path_planning_ws/src/amr_controller/src/simple_controller.cpp:1[m[K:
+[3.735s] [01m[K/home/nathan/amr_path_planning_ws/src/amr_controller/include/amr_controller/simple_controller.hpp:[m[K In constructor ‘[01m[KSimpleController::SimpleController(const string&)[m[K’:
+[3.735s] [01m[K/home/nathan/amr_path_planning_ws/src/amr_controller/include/amr_controller/simple_controller.hpp:35:12:[m[K [01;35m[Kwarning: [m[K‘[01m[KSimpleController::front_left_wheel_prev_pos_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.735s]    35 |     double [01;35m[Kfront_left_wheel_prev_pos_[m[K;
+[3.735s]       |            [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.735s] [01m[K/home/nathan/amr_path_planning_ws/src/amr_controller/include/amr_controller/simple_controller.hpp:34:12:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kdouble SimpleController::front_right_wheel_prev_pos_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.736s]    34 |     double [01;35m[Kfront_right_wheel_prev_pos_[m[K;
+[3.736s]       |            [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.736s] [01m[K/home/nathan/amr_path_planning_ws/src/amr_controller/src/simple_controller.cpp:13:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.736s]    13 | [01;35m[KSimpleController[m[K::SimpleController(const std::string& name)
+[3.736s]       | [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[3.736s] In file included from [01m[K/home/nathan/amr_path_planning_ws/src/amr_controller/src/simple_controller.cpp:1[m[K:
+[3.736s] [01m[K/home/nathan/amr_path_planning_ws/src/amr_controller/include/amr_controller/simple_controller.hpp:37:12:[m[K [01;35m[Kwarning: [m[K‘[01m[KSimpleController::rear_left_wheel_prev_pos_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.736s]    37 |     double [01;35m[Krear_left_wheel_prev_pos_[m[K;
+[3.736s]       |            [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.736s] [01m[K/home/nathan/amr_path_planning_ws/src/amr_controller/include/amr_controller/simple_controller.hpp:36:12:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kdouble SimpleController::rear_right_wheel_prev_pos_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.736s]    36 |     double [01;35m[Krear_right_wheel_prev_pos_[m[K;
+[3.736s]       |            [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.736s] [01m[K/home/nathan/amr_path_planning_ws/src/amr_controller/src/simple_controller.cpp:13:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[3.736s]    13 | [01;35m[KSimpleController[m[K::SimpleController(const std::string& name)
+[3.736s]       | [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[12.872s] [100%] [32m[1mLinking CXX executable simple_controller[0m
+[13.628s] [100%] Built target simple_controller
+[13.639s] Invoked command in '/home/nathan/amr_path_planning_ws/build/amr_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/path_planning_ws/install/maze_bot:/opt/ros/humble /usr/bin/cmake --build /home/nathan/amr_path_planning_ws/build/amr_controller -- -j12 -l12
+[13.664s] Invoking command in '/home/nathan/amr_path_planning_ws/build/amr_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/path_planning_ws/install/maze_bot:/opt/ros/humble /usr/bin/cmake --install /home/nathan/amr_path_planning_ws/build/amr_controller
+[13.673s] -- Install configuration: ""
+[13.673s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/include/include
+[13.673s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/include/include/amr_controller
+[13.673s] -- Installing: /home/nathan/amr_path_planning_ws/install/amr_controller/include/include/amr_controller/simple_controller.hpp
+[13.674s] -- Installing: /home/nathan/amr_path_planning_ws/install/amr_controller/lib/amr_controller/simple_controller
+[13.681s] -- Set runtime path of "/home/nathan/amr_path_planning_ws/install/amr_controller/lib/amr_controller/simple_controller" to ""
+[13.682s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/launch
+[13.682s] -- Installing: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/launch/controller.launch.py
+[13.682s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/config
+[13.682s] -- Installing: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/config/amr_controllers.yaml
+[13.682s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/config/joy_config.yaml
+[13.682s] -- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/config/joy_teleop.yaml
+[13.682s] [31mCMake Error at cmake_install.cmake:77 (file):
+[13.682s]   file INSTALL cannot find
+[13.682s]   "/home/nathan/amr_path_planning_ws/src/amr_controller/amr_controller/simple_controller.py":
+[13.683s]   No such file or directory.
+[13.683s] 
+[13.683s] [0m
+[13.684s] Invoked command in '/home/nathan/amr_path_planning_ws/build/amr_controller' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/path_planning_ws/install/maze_bot:/opt/ros/humble /usr/bin/cmake --install /home/nathan/amr_path_planning_ws/build/amr_controller

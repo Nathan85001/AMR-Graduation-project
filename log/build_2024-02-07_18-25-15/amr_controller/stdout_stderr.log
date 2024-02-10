@@ -1,0 +1,19 @@
+[35m[1mConsolidate compiler generated dependencies of target simple_controller[0m
+[100%] Built target simple_controller
+-- Install configuration: ""
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/include/include
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/include/include/amr_controller
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/include/include/amr_controller/simple_controller.hpp
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/lib/amr_controller/simple_controller
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/launch
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/launch/controller.launch.py
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/config
+[31mCMake Error at cmake_install.cmake:77 (file):
+  file INSTALL cannot find
+  "/home/nathan/amr_path_planning_ws/src/amr_controller/amr_controller/simple_controller.py":
+  No such file or directory.
+
+[0m
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/config/amr_controllers.yaml
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/config/joy_config.yaml
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/config/joy_teleop.yaml

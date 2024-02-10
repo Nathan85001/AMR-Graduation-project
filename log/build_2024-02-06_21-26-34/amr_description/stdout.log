@@ -1,0 +1,56 @@
+-- Found ament_cmake: 1.3.7 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found urdf: 2.6.0 (/opt/ros/humble/share/urdf/cmake)
+-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/nathan/amr_path_planning_ws/build/amr_description
+-- Install configuration: ""
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/launch
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/launch/gazebo.launch.py
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/launch/display.launch.py
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/top_final.dae
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/assem copy.stl
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/inner_final.dae
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/base_final.stl
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/kinect.dae
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/inner_final.stl
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/top_final.stl
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/lidar.dae
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/shaft_final.stl
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/top_plate_final.stl
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/lidar.stl
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/shaft_final.dae
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/assem.stl
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/Base_final.dae
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/Base_final.stl
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/outer_final.stl
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/kinect.stl
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/top_plate_final.dae
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/meshes/outer_final.dae
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/urdf
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/urdf/amr_gazebo.xacro
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/urdf/amr_ros2_control.xacro
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/urdf/amr.urdf.xacro
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/rviz
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/rviz/display.rviz
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/ament_index/resource_index/package_run_dependencies/amr_description
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/ament_index/resource_index/parent_prefix_path/amr_description
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/environment/ament_prefix_path.sh
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/environment/ament_prefix_path.dsv
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/environment/path.sh
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/environment/path.dsv
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/local_setup.bash
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/local_setup.sh
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/local_setup.zsh
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/local_setup.dsv
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/package.dsv
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/ament_index/resource_index/packages/amr_description
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/cmake/amr_descriptionConfig.cmake
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/cmake/amr_descriptionConfig-version.cmake
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_description/share/amr_description/package.xml

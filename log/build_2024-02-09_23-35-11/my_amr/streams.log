@@ -1,0 +1,21 @@
+[0.915s] Invoking command in '/home/nathan/amr_path_planning_ws/src/my_amr': PYTHONPATH=/home/nathan/amr_path_planning_ws/build/my_amr/prefix_override:/home/nathan/amr_path_planning_ws/install/my_amr/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_amr build --build-base /home/nathan/amr_path_planning_ws/build/my_amr/build install --record /home/nathan/amr_path_planning_ws/build/my_amr/install.log --single-version-externally-managed
+[1.165s] running egg_info
+[1.165s] writing ../../build/my_amr/my_amr.egg-info/PKG-INFO
+[1.165s] writing dependency_links to ../../build/my_amr/my_amr.egg-info/dependency_links.txt
+[1.165s] writing entry points to ../../build/my_amr/my_amr.egg-info/entry_points.txt
+[1.165s] writing requirements to ../../build/my_amr/my_amr.egg-info/requires.txt
+[1.165s] writing top-level names to ../../build/my_amr/my_amr.egg-info/top_level.txt
+[1.167s] reading manifest file '../../build/my_amr/my_amr.egg-info/SOURCES.txt'
+[1.168s] writing manifest file '../../build/my_amr/my_amr.egg-info/SOURCES.txt'
+[1.168s] running build
+[1.168s] running build_py
+[1.168s] running install
+[1.168s] running install_lib
+[1.169s] running install_data
+[1.169s] running install_egg_info
+[1.171s] removing '/home/nathan/amr_path_planning_ws/install/my_amr/lib/python3.10/site-packages/my_amr-0.0.0-py3.10.egg-info' (and everything under it)
+[1.171s] Copying ../../build/my_amr/my_amr.egg-info to /home/nathan/amr_path_planning_ws/install/my_amr/lib/python3.10/site-packages/my_amr-0.0.0-py3.10.egg-info
+[1.172s] running install_scripts
+[1.185s] Installing driving_amr script to /home/nathan/amr_path_planning_ws/install/my_amr/lib/my_amr
+[1.186s] writing list of installed files to '/home/nathan/amr_path_planning_ws/build/my_amr/install.log'
+[1.201s] Invoked command in '/home/nathan/amr_path_planning_ws/src/my_amr' returned '0': PYTHONPATH=/home/nathan/amr_path_planning_ws/build/my_amr/prefix_override:/home/nathan/amr_path_planning_ws/install/my_amr/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_amr build --build-base /home/nathan/amr_path_planning_ws/build/my_amr/build install --record /home/nathan/amr_path_planning_ws/build/my_amr/install.log --single-version-externally-managed

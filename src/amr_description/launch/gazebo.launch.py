@@ -1,4 +1,5 @@
 import os
+from os import pathsep
 from ament_index_python.packages import get_package_share_directory, get_package_prefix
 
 from launch import LaunchDescription
@@ -11,17 +12,22 @@ from launch_ros.parameter_descriptions import ParameterValue
 
 
 def generate_launch_description():
-    amr_description_dir = get_package_share_directory("amr_description")
-    amr_description_share = os.path.join(get_package_prefix("amr_description"), "share")
+    amr_description = get_package_share_directory("amr_description")
+    amr_description_prefix= os.path.join(get_package_prefix("amr_description"), "share")
     gazebo_ros_dir = get_package_share_directory("gazebo_ros")
 
     model_arg = DeclareLaunchArgument(name="model", default_value=os.path.join(
-                                        amr_description_dir, "urdf", "amr.urdf.xacro"
+                                        amr_description, "urdf", "amr.urdf.xacro"
                                         ),
                                         description="Absolute path to robot urdf file"
     )
+    
 
-    env_var = SetEnvironmentVariable("GAZEBO_MODEL_PATH", amr_description_share)
+    
+    model_path = os.path.join(amr_description, "models")
+    model_path += pathsep + os.path.join(amr_description_prefix, "share")
+
+    env_var = SetEnvironmentVariable("GAZEBO_MODEL_PATH", model_path)
 
     robot_description = ParameterValue(Command(["xacro ", LaunchConfiguration("model")]),
                                         value_type=str)
@@ -29,6 +35,7 @@ def generate_launch_description():
     robot_state_publisher_node = Node(
         package="robot_state_publisher",
         executable="robot_state_publisher",
+        # parameters=[{'robot_description': launch_ros.descriptions.ParameterValue( launch.substitutions.Command(['xacro ',os.path.join(amr_description, "urdf", "amr.urdf.xacro")]), value_type=str)  }]
         parameters=[{"robot_description": robot_description}]
     )
 

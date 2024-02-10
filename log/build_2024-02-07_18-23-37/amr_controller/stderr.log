@@ -1,0 +1,27 @@
+In file included from [01m[K/home/nathan/amr_path_planning_ws/src/amr_controller/src/simple_controller.cpp:1[m[K:
+[01m[K/home/nathan/amr_path_planning_ws/src/amr_controller/include/amr_controller/simple_controller.hpp:[m[K In constructor ‘[01m[KSimpleController::SimpleController(const string&)[m[K’:
+[01m[K/home/nathan/amr_path_planning_ws/src/amr_controller/include/amr_controller/simple_controller.hpp:35:12:[m[K [01;35m[Kwarning: [m[K‘[01m[KSimpleController::front_left_wheel_prev_pos_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   35 |     double [01;35m[Kfront_left_wheel_prev_pos_[m[K;
+      |            [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nathan/amr_path_planning_ws/src/amr_controller/include/amr_controller/simple_controller.hpp:34:12:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kdouble SimpleController::front_right_wheel_prev_pos_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   34 |     double [01;35m[Kfront_right_wheel_prev_pos_[m[K;
+      |            [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nathan/amr_path_planning_ws/src/amr_controller/src/simple_controller.cpp:13:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   13 | [01;35m[KSimpleController[m[K::SimpleController(const std::string& name)
+      | [01;35m[K^~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/nathan/amr_path_planning_ws/src/amr_controller/src/simple_controller.cpp:1[m[K:
+[01m[K/home/nathan/amr_path_planning_ws/src/amr_controller/include/amr_controller/simple_controller.hpp:37:12:[m[K [01;35m[Kwarning: [m[K‘[01m[KSimpleController::rear_left_wheel_prev_pos_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   37 |     double [01;35m[Krear_left_wheel_prev_pos_[m[K;
+      |            [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nathan/amr_path_planning_ws/src/amr_controller/include/amr_controller/simple_controller.hpp:36:12:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kdouble SimpleController::rear_right_wheel_prev_pos_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   36 |     double [01;35m[Krear_right_wheel_prev_pos_[m[K;
+      |            [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/nathan/amr_path_planning_ws/src/amr_controller/src/simple_controller.cpp:13:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   13 | [01;35m[KSimpleController[m[K::SimpleController(const std::string& name)
+      | [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[31mCMake Error at cmake_install.cmake:77 (file):
+  file INSTALL cannot find
+  "/home/nathan/amr_path_planning_ws/src/amr_controller/amr_controller/simple_controller.py":
+  No such file or directory.
+
+[0m

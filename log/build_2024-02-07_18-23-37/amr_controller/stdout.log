@@ -1,0 +1,16 @@
+[35m[1mConsolidate compiler generated dependencies of target simple_controller[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/simple_controller.dir/src/simple_controller.cpp.o[0m
+[100%] [32m[1mLinking CXX executable simple_controller[0m
+[100%] Built target simple_controller
+-- Install configuration: ""
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/include/include
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/include/include/amr_controller
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_controller/include/include/amr_controller/simple_controller.hpp
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_controller/lib/amr_controller/simple_controller
+-- Set runtime path of "/home/nathan/amr_path_planning_ws/install/amr_controller/lib/amr_controller/simple_controller" to ""
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/launch
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/launch/controller.launch.py
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/config
+-- Installing: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/config/amr_controllers.yaml
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/config/joy_config.yaml
+-- Up-to-date: /home/nathan/amr_path_planning_ws/install/amr_controller/share/amr_controller/config/joy_teleop.yaml
