@@ -1,3 +1,0 @@
-[console_scripts]
-driving_amr = my_amr.driving_node:main
-
