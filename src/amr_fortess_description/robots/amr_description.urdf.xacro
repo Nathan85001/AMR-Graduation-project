@@ -1,0 +1,362 @@
+<?xml version="1.0"?>
+
+<robot name="amr" xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:macro name="amr" params="prefix use_sim:=^|false">
+    
+  <material name="gray">
+    <color rgba="0.5 0.5 0.5 1"/>
+  </material>
+  <material name="white">
+    <color rgba="1.0 1.0 1.0 1"/>
+  </material>
+  <material name="black">
+    <color rgba="0.0 0.0 0.0"/>
+  </material>
+  <material name="silver">
+    <color rgba="0.75 0.75 0.75 1"/>
+  </material>
+  <material name="light_gray">
+    <color rgba="0.8 0.8 0.8 1"/>
+  </material>
+
+    <link name="base_footprint"/>
+
+    <joint name="base_joint" type="fixed">
+    <parent link="base_footprint"/>
+    <child  link="base"/>
+    <origin rpy="0 0 0" xyz="0 0 0.093"/>
+    </joint>
+
+    <link name="base">
+    <inertial>
+    <origin xyz="0 0 0.1" rpy="0 0 0" />
+    <mass value="8.34"/>
+    <inertia ixx= "2386468.63e-7"
+    ixy = "-261456.79e-7"
+    iyy = "4827722.72e-7"
+    ixz= "76941.00e-7"
+    iyz = "57814.62e-7"
+    izz = "3252219.31e-7"/></inertial>
+    <visual>
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <geometry>
+    <mesh filename="package://amr_fortess_description/meshes/Base_final.stl"/>
+    </geometry>
+    <material name="gray"/>
+    </visual>
+    <collision>
+    <geometry>
+    <mesh filename="package://amr_fortess_description/meshes/Base_final.stl"/>
+    </geometry>
+    </collision>   
+    </link>
+
+    <gazebo reference="base">
+      <material>Gazebo/Gray</material>
+    </gazebo>
+
+
+    <xacro:macro name="wheel_macro" params="prefix parent xyz_shaft rpy_shaft xyz_rotation xyz_inner">
+
+        <link name="${prefix}_shaft_link">
+        <inertial>
+        <mass value="0.06175"/>
+        <inertia
+        ixx="1111.52e-7" 
+        iyy="101415.96e-7" 
+        izz="101415.96e-7" 
+        ixy="0.0" 
+        ixz="0.0" 
+        iyz="0.0"/>
+        </inertial>
+        
+        <visual>
+        <geometry>
+        <mesh filename="package://amr_fortess_description/meshes/shaft_final.stl"/>
+        </geometry>
+        <material name="white"/>
+        </visual>
+        
+        <collision>
+        <geometry>
+        <mesh filename="package://amr_fortess_description/meshes/shaft_final.stl"/>
+        </geometry>
+        </collision>
+
+        </link>
+
+      <gazebo reference="${prefix}_shaft_link">
+      <material>Gazebo/Gray</material>
+      <mu1 value="2.5" />
+      <mu2 value="2.5" />
+      <kp value="50000" />
+      <kd value="10" />
+      </gazebo>
+
+        <link name="${prefix}_inner_link">
+        <inertial>
+        <mass value="0.94"/>
+        <inertia 
+        ixx="1752393.51e-7" 
+        iyy="1233250.95e-7" 
+        izz="1233250.94e-7" 
+        ixy="-0.01e-7" 
+        ixz="-0.05e-7" 
+        iyz="0.1e-7"/>
+        </inertial>
+        
+        <visual>        
+        <geometry>
+        <mesh filename="package://amr_fortess_description/meshes/inner_final.stl"/>
+        </geometry>
+        <material name="silver"/>
+        </visual>
+        
+        <collision>
+        <geometry>
+        <mesh filename="package://amr_fortess_description/meshes/inner_final.stl"/>
+        </geometry>
+        </collision>
+
+        </link>
+
+        <gazebo reference="${prefix}_inner_link">
+          <material>Gazebo/Gray</material>
+        </gazebo>
+
+        <link name="${prefix}_outer_link">
+        <inertial>
+        <mass value="0.11614"/>
+        <inertia 
+        ixx="366729.55e-7" 
+        iyy="366729.55e-7" 
+        izz="435440.86e-7" 
+        ixy="0.0" 
+        ixz="0.0" 
+        iyz="0.0"/>
+        </inertial>
+        
+        <visual>
+        <geometry>
+        <mesh filename="package://amr_fortess_description/meshes/outer_final.stl"/>
+        </geometry>
+        <material name="black"/>
+        </visual>
+        
+        <collision>
+        <geometry>
+        <mesh filename="package://amr_fortess_description/meshes/outer_final.stl"/>
+        </geometry>
+        </collision>
+
+        </link>
+
+        <gazebo reference="${prefix}_outer_link">
+          <material>Gazebo/Black</material>
+        </gazebo>
+
+        <joint name="${prefix}_motor_joint" type="continuous">
+        <origin xyz="${xyz_shaft} " rpy="${rpy_shaft}"/>
+        <parent link="${parent}"/>
+        <child link="${prefix}_shaft_link"/>
+        <axis xyz="${xyz_rotation}"/>
+        </joint>\
+
+        <joint name="${prefix}_inner_joint" type="fixed">
+        <origin xyz="${xyz_inner}  " rpy="0 0.0 0.0"/>
+        <parent link="${prefix}_shaft_link"/>
+        <child link="${prefix}_inner_link"/>
+        <axis xyz="0.0 0.0 0.0"/>
+        </joint>
+
+        <joint name="${prefix}_outer_joint" type="fixed">
+        <origin xyz="0.0 0.0 0.0  " rpy="0 0.0 0.0"/>
+        <parent link="${prefix}_inner_link"/>
+        <child link="${prefix}_outer_link"/>
+        <axis xyz="0.0 0.0 0.0"/>
+        </joint>
+
+        <transmission name="${prefix}_trans" type="SimpleTransmission">
+        <type>transmission_interface/SimpleTransmission</type>
+        <actuator name="${prefix}_motor">
+        <mechanicalReduction>50</mechanicalReduction>
+        </actuator>
+        <joint name="${prefix}_motor_joint">
+        <hardwareInterface>hardware_interface/VelocityJointInterface</hardwareInterface>
+        </joint>
+        </transmission>
+
+    </xacro:macro> 
+
+    <xacro:wheel_macro prefix="rear_right" parent="base" xyz_shaft="-0.108 0.19 -0.028" rpy_shaft="0 0 0" xyz_rotation="0 1 0" xyz_inner="0 0.022 0"/>
+    <xacro:wheel_macro prefix="rear_left" parent="base" xyz_shaft="-0.108 -0.19 -0.028" rpy_shaft="3.14 0 0" xyz_rotation="0 -1 0" xyz_inner="0 0.022 0"/>
+    <xacro:wheel_macro prefix="front_right" parent="base" xyz_shaft="0.106 0.19 -0.028" rpy_shaft="0 0 0" xyz_rotation="0 1 0" xyz_inner="0 0.022 0"/>
+    <xacro:wheel_macro prefix="front_left" parent="base" xyz_shaft="0.106 -0.19 -0.028" rpy_shaft="3.14 0 0" xyz_rotation="0 -1 0" xyz_inner="0 0.022 0"/>
+
+    <!-- 
+    link for top of the bot
+    -->  
+
+    <link name="bot_top">
+    <inertial>
+    <mass value="8.47"/>
+    <inertia ixx="0.002307898" iyy="0.004479378" izz="0.002685416" ixy="0.0" ixz="0.0" iyz="0.0"/>
+    <origin/>
+    </inertial>
+
+    <visual> 
+    <geometry>
+    <mesh filename="package://amr_fortess_description/meshes/top_final.stl"/>
+    </geometry>
+    <material name="light_gray"/>
+    </visual>
+
+    <collision>
+    <geometry>
+    <mesh filename="package://amr_fortess_description/meshes/top_final.stl"/>
+    </geometry>
+    </collision>
+
+    </link>
+
+    <gazebo reference="bot_top">
+      <material>Gazebo/Gray</material>
+    </gazebo>    
+
+    <!-- 
+    link for top of the bot plate
+    -->  
+
+    <link name="bot_top_plate">
+    <inertial>
+    <mass value="2.54605"/>
+    <inertia ixx="0.000065178" iyy="0.000128019" izz="0.000065178" ixy="0.0" ixz="0.0" iyz="0.0"/>
+    <origin/>
+    </inertial>
+
+    <visual>  
+    <geometry>
+    <mesh filename="package://amr_fortess_description/meshes/top_plate_final.stl"/>
+    </geometry>
+    <material name="gray"/>
+    </visual>
+
+    <collision>
+    <geometry>
+    <mesh filename="package://amr_fortess_description/meshes/top_final.stl"/>
+    </geometry>
+    </collision>
+
+    </link>
+
+    <gazebo reference="bot_top_plate">
+      <material>Gazebo/Gray</material>
+    </gazebo>
+
+    <!-- 
+    link for kinect camera
+    -->  
+
+
+    <link name="kinect_camera">
+    <inertial>
+    <mass value="0.350"/>
+    <inertia ixx="0.003042698" iyy="0.000488640" izz="0.002953811" ixy="0.0" ixz="0.0" iyz="0.0"/>
+    <origin/>
+    </inertial>
+
+    <visual>  
+    <geometry>
+    <mesh filename="package://amr_fortess_description/meshes/kinect.stl"/>
+    </geometry>
+    <material name="black"/>
+    </visual>
+
+    <collision>
+    <geometry>
+    <mesh filename="package://amr_fortess_description/meshes/kinect.stl"/>
+    </geometry>
+    </collision>
+
+    </link>
+
+    <gazebo reference="kinect_camera">
+      <material>Gazebo/Black</material>
+    </gazebo>
+
+    <!-- 
+    link for lidar
+    -->  
+
+    <link name="lidar">
+    <inertial>
+    <mass value="0.175"/>
+    <inertia ixx="0.000380890" iyy="0.000594858" izz="0.000679996" ixy="0.0" ixz="0.0" iyz="0.0"/>
+    <origin/>
+    </inertial>
+
+    <visual>  
+    <geometry>
+    <mesh filename="package://amr_fortess_description/meshes/lidar.stl"/>
+    </geometry>
+    <material name="black"/>
+    </visual>
+
+    <collision>
+    <geometry>
+    <mesh filename="package://amr_fortess_description/meshes/lidar.stl"/>
+    </geometry>
+    </collision>
+
+    </link>
+
+    <gazebo reference="lidar">
+      <material>Gazebo/Black</material>
+    </gazebo>
+
+
+    <!-- 
+    joints for bot top
+    -->
+    <joint name="bot_top_joint" type="fixed">
+    <origin xyz="0.0 0.0 0.2" rpy="0.0 0.0 0.0"/>
+    <parent link="base"/>
+    <child link="bot_top"/>
+    <axis xyz="0.0 0.0 0"/>
+    </joint>\
+
+    <!-- 
+    joint for bot top plate
+    -->
+    <joint name="bot_top_plate_joint" type="prismatic">
+    <origin xyz="0.0 0.0 0.07" rpy="0.0 0.0 0.0"/>
+    <limit lower="0.00" upper="0.07" effort="100.0" velocity="1.0"/>
+    <parent link="bot_top"/>
+    <child link="bot_top_plate"/>
+    <axis xyz="0.0 0.0 1"/>
+    </joint>\
+
+    <!-- 
+    joint for kinect
+    -->
+    <joint name="kinect_camera_joint" type="fixed">
+    <origin xyz="0.23 0.0 0.07" rpy="0.0 0.0 0"/>
+    <parent link="bot_top"/>
+    <child link="kinect_camera"/>
+    <axis xyz="0.0 0.0 0"/>
+    </joint>\
+
+    <!-- 
+    joint for lidar
+    -->
+    <joint name="lidar_joint" type="fixed">
+    <origin xyz="0.18 0.11 0.07" rpy="0.0 0.0 0"/>
+    <parent link="bot_top"/>
+    <child link="lidar"/>
+    <axis xyz="0.0 0.0 0"/>
+    </joint>
+
+  </xacro:macro>
+
+</robot>

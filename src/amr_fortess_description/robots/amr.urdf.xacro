@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!-- Basic differential drive mobile base -->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="amr">
+  <xacro:arg name="prefix" default="" />
+  <xacro:arg name="use_sim" default="false" />
+  
+  <xacro:include filename="$(find amr_fortess_description)/robots/amr_description.urdf.xacro" />
+
+  <xacro:include filename="$(find amr_fortess_description)/gazebo/amr.gazebo.xacro" />
+
+  <!-- Import amr ros2_control description -->
+  <xacro:include filename="$(find amr_fortess_description)/ros2_control/amr.ros2_control.xacro" />
+
+  <xacro:amr prefix="$(arg prefix)" use_sim="$(arg use_sim)"/>
+  <xacro:amr_gazebo prefix="$(arg prefix)" />
+
+  <xacro:amr_ros2_control
+    name="amr" prefix="$(arg prefix)" use_sim="$(arg use_sim)" />
+    
+</robot>
